@@ -1,0 +1,47 @@
+# Annotation Guidelines – RealWorldScenes-50
+
+These guidelines ensure consistency and quality in annotations across all dataset images.
+
+## Classes and Rules
+
+### 1. Person
+- Annotate full human body if visible.
+- If partially visible, annotate only visible parts.
+- Ignore shadows or reflections.
+
+### 2. Food
+- Annotate clearly visible food items.
+- Ignore packaging if food is not visible.
+- Avoid labeling food in advertisements or menus unless in real context.
+
+### 3. Vehicle
+- Annotate full outline of cars, buses, trucks, motorcycles, bicycles.
+- Ignore vehicles that are less than 50% visible.
+- Exclude toys or models unless they are the main object.
+
+### 4. Animal
+- Annotate all visible animals (domestic or wild).
+- Ignore animals that are less than 10x10 pixels in size.
+- Do not annotate statues or pictures of animals.
+
+### 5. Electronic Device
+- Annotate clearly visible devices like mobile phones, laptops, tablets, cameras, TVs.
+- Exclude devices if they are unclear or mostly hidden.
+
+---
+
+## General Rules
+- Bounding boxes should be **tight** around the object.
+- Skip objects that are too blurry to identify.
+- Avoid labeling duplicates (e.g., reflections in mirrors, shadows).
+- Maintain consistent labeling across similar scenes.
+
+---
+
+## Export Formats
+- YOLO 1.1 (`.txt` files with coordinates and class IDs)
+- COCO 1.0 (`instances_default.json` with object metadata)
+
+---
+
+*Prepared for educational use and portfolio demonstration purposes.*
